@@ -14,17 +14,83 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <!-- <button onclick="setData()">Apply</button> -->
   </head>
-  <body>
-    <!-- Main Div Stard -->
+  <body style="background-color: lightblue">
+    <!-- Main Div Start -->
     <div id="main-Div">
-      <!-- <button onclick="setData()">Apply</button> -->
-      <div style="border: solid red; height: 30rem; width: 40rem">
-        <h3>To Do List</h3>
-        <input class="form-control" placeholder="Enter The Name :" />
+      <!-- Second Div Start-->
+      <div id="second-child-div">
+        <!-- Heading Div Start -->
+        <div>
+          <h1 id="todo-heading">To-Do List</h1>
+        </div>
+        <!-- Heading Div Close -->
+        <!-- Input Div Start -->
+        <div id="input-div">
+          <input
+            id="text-input"
+            class="form-control"
+            placeholder="Enter The Name :"
+          />
+          <button onclick="addItem()" id="button" class="btn btn-primary">
+            ADD
+          </button>
+        </div>
+        <!-- Input Div Close -->
+        <!-- <div style="border: solid blue; height: 20rem"></div> -->
       </div>
+      <!-- Second Div Close -->
     </div>
     <!-- Main Div Close -->
+
+    <!--      
+      <div id="input-div">
+      <div id="input">
+      </div>
+      </div>
+    </div> -->
+    <!-- Main Div Close -->
+
+    <!-- <div class="main">
+      <div></div>
+
+      <div class="first-child">
+        <div class="grid-container">
+          <div></div>
+          <input
+            type="text"
+            id="input"
+            class="input-style"
+            name=""
+            id=""
+            placeholder="Enter task here"
+          />
+          <button onclick="addItem()" id="button" class="add-button">
+            ADD
+          </button>
+          <div></div>
+        </div>
+
+        <div></div>
+        <div class="task-list">
+          <div></div>
+
+          <div class="task-list-layer-2">
+            <table class="table">
+              <tr>
+                <th class="th">ITEM LIST</th>
+              </tr>
+            </table>
+
+            <ul style="color: white" id="ul"></ul>
+          </div>
+
+          <div></div>
+        </div>
+        <div></div>
+      </div>
+    </div> -->
   </body>
   <!-- Java Script Link -->
   <script src="Assigment-Java Script.js"></script>
@@ -33,7 +99,6 @@
   <!-- Link For FireBase -->
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
-
   <!-- TODO: Add SDKs for Firebase products that you want to use
     https://firebase.google.com/docs/web/setup#available-libraries -->
   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>

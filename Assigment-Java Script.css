@@ -2,4 +2,30 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border: solid black;
+}
+#second-child-div {
+  border: solid red;
+  width: 30%;
+  height: 30rem;
+}
+#todo-heading{
+  margin-bottom: 5%; 
+  margin-left: 5rem
+}
+#input-div{
+  border-radius: 10px;
+  display: flex;
+  width: 20rem;
+  margin-left: 2rem;
+  margin-bottom: 5%;
+  background-color: white;
+}
+#text-input{
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+}
+#button{
+  border: none;
 }
