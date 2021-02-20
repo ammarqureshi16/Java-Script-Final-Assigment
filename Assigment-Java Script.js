@@ -1,5 +1,6 @@
-// const db = firebase.firestore();
-// console.log(db);
+const db = firebase.firestore();
+console.log(db);
+
 // function setData() {
 //   // alert("Ammar Qureshi");
 //   var userData = {};
@@ -16,10 +17,10 @@ const sec=doc.getElementById("second-child-div")
 const thir=doc.getElementById("third-div")
 const heading=doc.getElementById("todo-heading")
 const inputdiv=doc.getElementById("input-div")
-
 const button=doc.getElementById("button-add")
 
 function addItem() {
+  // alert("Login")
   const input=doc.getElementById("text-input")
   console.log(input);
   var ul = document.getElementById("ul");
@@ -29,27 +30,9 @@ function addItem() {
   var deleteButton = document.createElement("button");
   deleteButton.innerHTML = " Delete ";
 
-
-  // Styleing
-  // deleteButton.style.backgroundColor = "Black";
-  // deleteButton.style.color = "white";
-  // deleteButton.style.width = "53px";
-  // deleteButton.style.height = "30px";
-  // deleteButton.style.border = "none";
-  // deleteButton.style.borderRadius = "6px";
-
   var editButon = document.createElement("button");
   editButon.innerHTML = " Edit ";
 
-
-  // Styleing
-  // editButon.style.backgroundColor = "red";
-  // editButon.style.color = "white";
-  // editButon.style.width = "53px";
-  // editButon.style.height = "30px";
-  // editButon.style.border = "none";
-  // editButon.style.borderRadius = "6px";
-  
     editButon.setAttribute("onClick", "editItem(event)");
     deleteButton.setAttribute("OnClick", "deleteItem(event)");
     listItem.appendChild(editButon);
